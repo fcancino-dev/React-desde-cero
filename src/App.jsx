@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <div className="containerDiv">
-        <h2>A quien seguir</h2>
+        <span className="textSeccion">A quien seguir</span>
         <section className="App">
             <TwitterFollowCard 
                 // formatUserName={format}
