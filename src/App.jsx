@@ -7,32 +7,35 @@ export function App() {
     //const elonmusk = { isFollowing: true, username: "fcancino"} //solo se usa cuando el objeto es muy grande
 
   return (
-    <section className="App">
-        <TwitterFollowCard 
-            // formatUserName={format}
-            initialIsFollowing={true}
-            username="midudev" 
-            name="Miguel Angel Duran"
-        />
-        <TwitterFollowCard 
-            username="pheralb" 
-            name="Pablo Hernandez"
-        />
-        <TwitterFollowCard 
-            // username="elonmusk" 
-            name="Elon Musk"
-        />
-        <TwitterFollowCard 
-            initialIsFollowing={true}
-            username="fcancino" 
-            name="Franco Cancino"
-        />
-        {/* <TwitterFollowCard 
-            {...elonmusk}
-        >
-            Franco Cancino
-        </TwitterFollowCard> */}
+    <div className="containerDiv">
+        <h2>A quien seguir</h2>
+        <section className="App">
+            <TwitterFollowCard 
+                // formatUserName={format}
+                initialIsFollowing={false}
+                username="midudev" 
+                name="Miguel Angel Duran"
+                />
+            <TwitterFollowCard 
+                username="pheralb" 
+                name="Pablo Hernandez"
+                />
+            <TwitterFollowCard 
+                // username="elonmusk" 
+                name="Elon Musk"
+                />
+            <TwitterFollowCard 
+                initialIsFollowing={true}
+                username="fcancino" 
+                name="Franco Cancino"
+            />
+            {/* <TwitterFollowCard 
+                {...elonmusk}
+                >
+                Franco Cancino
+            </TwitterFollowCard> */}
 
-    </section>
+        </section>
+    </div>
   );
 }
