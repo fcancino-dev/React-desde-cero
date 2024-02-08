@@ -4,12 +4,13 @@ export function App() {
 
     // const format = (username) => `@${username}`
     
-    const elonmusk = { isFollowing: true, username: "fcancino"} //solo se usa cuando el objeto es muy grande
+    //const elonmusk = { isFollowing: true, username: "fcancino"} //solo se usa cuando el objeto es muy grande
 
   return (
     <section className="App">
         <TwitterFollowCard 
             // formatUserName={format}
+            initialIsFollowing={true}
             username="midudev" 
             name="Miguel Angel Duran"
         />
@@ -22,6 +23,7 @@ export function App() {
             name="Elon Musk"
         />
         <TwitterFollowCard 
+            initialIsFollowing={true}
             username="fcancino" 
             name="Franco Cancino"
         />
