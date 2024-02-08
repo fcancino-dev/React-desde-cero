@@ -1,20 +1,36 @@
+import { TwitterFollowCard } from "./TwitterFollowCard";
+
 export function App() {
+
+    // const format = (username) => `@${username}`
+    
+    const elonmusk = { isFollowing: true, username: "fcancino"} //solo se usa cuando el objeto es muy grande
+
   return (
-    <div className="general">    
-        <article>
-            <header>
-                <img src="https://unavatar.io/dribbble/omidnikrah" alt="un avatar cualquiera" />
-                <div>
-                    <strong>Migueal Angel Duran</strong>
-                    <span>@miguel</span>
-                </div>
-            </header>
-            <aside>
-                <button>
-                    seguir
-                </button>
-            </aside>
-        </article>
-    </div>
+    <section className="App">
+        <TwitterFollowCard 
+            // formatUserName={format}
+            username="midudev" 
+            name="Miguel Angel Duran"
+        />
+        <TwitterFollowCard 
+            username="pheralb" 
+            name="Pablo Hernandez"
+        />
+        <TwitterFollowCard 
+            // username="elonmusk" 
+            name="Elon Musk"
+        />
+        <TwitterFollowCard 
+            username="fcancino" 
+            name="Franco Cancino"
+        />
+        {/* <TwitterFollowCard 
+            {...elonmusk}
+        >
+            Franco Cancino
+        </TwitterFollowCard> */}
+
+    </section>
   );
 }

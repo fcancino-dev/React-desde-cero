@@ -1,0 +1,13 @@
+body {
+    font-family: 'sistem ui', sans-serif;
+    background-color: #989595;
+    display: grid;
+    place-content: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 8px;
+}
