@@ -57,6 +57,7 @@
 }
 
 .tw-followCard-button {
+    /* width: 120px; */
     margin-left: 16px;
     padding: 6px 16px;
     border: 0;
@@ -66,9 +67,11 @@
     transition: .3s ease background-color;
 }
 .tw-followCard-button.is-following {
+    width: 131.5px;
     border: 2px solid white;
     background-color: transparent;
     color: white
+    
 }
 
 .tw-followCard-button:hover {
